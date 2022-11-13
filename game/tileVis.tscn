@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://d2ylx8ems2hhu"]
+
+[node name="tileVis" type="Node2D"]
+editor_description = "格子的视觉表现，可能要用于建造时或者其他时候需要显示格子的情况，根据各种状态显示不同外观
+
+"

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" load_steps=8 format=3 uid="uid://cfcgc4s3es0ps"]
+
+[ext_resource type="Script" path="res://level/levelEnmeyData/levelEnemyData.gd" id="1_c010f"]
+[ext_resource type="PackedScene" uid="uid://b3c6gcr6b0tph" path="res://game/enemy/EnemyBaseA.tscn" id="1_v2ksp"]
+[ext_resource type="PackedScene" uid="uid://emxigj34rcq5" path="res://game/enemy/EnemyBaseB.tscn" id="2_8snc8"]
+[ext_resource type="PackedScene" uid="uid://bvky81u1kqtse" path="res://game/enemy/EnemyBaseC.tscn" id="3_c3nho"]
+[ext_resource type="Script" path="res://level/levelEnmeyData/waveData.gd" id="4_8j403"]
+
+[sub_resource type="Resource" id="Resource_nkb6h"]
+script = ExtResource("4_8j403")
+wave = null
+Enemys = [ExtResource("1_v2ksp"), ExtResource("2_8snc8"), ExtResource("3_c3nho")]
+
+[sub_resource type="Resource" id="Resource_a8is5"]
+script = ExtResource("4_8j403")
+wave = 0
+Enemys = []
+
+[resource]
+script = ExtResource("1_c010f")
+ddd = [SubResource("Resource_nkb6h"), SubResource("Resource_a8is5")]

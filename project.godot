@@ -1,0 +1,174 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "Node2D",
+"class": &"AAA",
+"language": &"GDScript",
+"path": "res://test/A.gd"
+}, {
+"base": "Node2D",
+"class": &"AstarUnit",
+"language": &"GDScript",
+"path": "res://game/enemy/astar.gd"
+}, {
+"base": "Node2D",
+"class": &"BBB",
+"language": &"GDScript",
+"path": "res://test/B.gd"
+}, {
+"base": "Node2D",
+"class": &"BulletBase",
+"language": &"GDScript",
+"path": "res://game/tower/bullet/BulletBase.gd"
+}, {
+"base": "Node2D",
+"class": &"CCC",
+"language": &"GDScript",
+"path": "res://test/C.gd"
+}, {
+"base": "Node2D",
+"class": &"DDD",
+"language": &"GDScript",
+"path": "res://test/D.gd"
+}, {
+"base": "Node2D",
+"class": &"EnemyBase",
+"language": &"GDScript",
+"path": "res://game/enemy/EnemyBase.gd"
+}, {
+"base": "Resource",
+"class": &"EnemyData",
+"language": &"GDScript",
+"path": "res://game/enemy/enemyData/enemyData.gd"
+}, {
+"base": "Control",
+"class": &"GameUI",
+"language": &"GDScript",
+"path": "res://UI/gameUI.gd"
+}, {
+"base": "Node2D",
+"class": &"LevelBase",
+"language": &"GDScript",
+"path": "res://game/level.gd"
+}, {
+"base": "Resource",
+"class": &"LevelEnemyData",
+"language": &"GDScript",
+"path": "res://level/levelEnmeyData/levelEnemyData.gd"
+}, {
+"base": "Node2D",
+"class": &"PlayerBase",
+"language": &"GDScript",
+"path": "res://game/PlayerBase.gd"
+}, {
+"base": "Node2D",
+"class": &"PlayerInput",
+"language": &"GDScript",
+"path": "res://game/input.gd"
+}, {
+"base": "Node",
+"class": &"TDMaingame",
+"language": &"GDScript",
+"path": "res://game/TDmaingame.gd"
+}, {
+"base": "Resource",
+"class": &"TD_DataBase",
+"language": &"GDScript",
+"path": "res://autoload/dataBase.gd"
+}, {
+"base": "TowerBase",
+"class": &"TowerA1",
+"language": &"GDScript",
+"path": "res://game/tower/TowerA1.gd"
+}, {
+"base": "TowerBase",
+"class": &"TowerA2",
+"language": &"GDScript",
+"path": "res://game/tower/TowerA2.gd"
+}, {
+"base": "Node2D",
+"class": &"TowerBase",
+"language": &"GDScript",
+"path": "res://game/tower/TowerBase.gd"
+}, {
+"base": "Resource",
+"class": &"WaveData",
+"language": &"GDScript",
+"path": "res://level/levelEnmeyData/waveData.gd"
+}]
+_global_script_class_icons={
+"AAA": "",
+"AstarUnit": "",
+"BBB": "",
+"BulletBase": "",
+"CCC": "",
+"DDD": "",
+"EnemyBase": "",
+"EnemyData": "",
+"GameUI": "",
+"LevelBase": "",
+"LevelEnemyData": "",
+"PlayerBase": "",
+"PlayerInput": "",
+"TDMaingame": "",
+"TD_DataBase": "",
+"TowerA1": "",
+"TowerA2": "",
+"TowerBase": "",
+"WaveData": ""
+}
+
+[application]
+
+config/name="gdp1"
+run/main_scene="res://UI/main_menu_2.tscn"
+config/features=PackedStringArray("4.0")
+config/icon="res://icon.png"
+
+[autoload]
+
+TD_global="*res://autoload/AutoloadData.gd"
+TestAutoloadScene="*res://test/testAutoloadScene.tscn"
+
+[display]
+
+window/dpi/allow_hidpi=false
+
+[gui]
+
+theme/custom_font="res://font/new_dynamicfont.tres"
+
+[input]
+
+testKey={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":70,"physical_keycode":0,"unicode":0,"echo":false,"script":null)
+]
+}
+click={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"pressed":false,"double_click":false,"script":null)
+]
+}
+
+[layer_names]
+
+2d_physics/layer_1="塔"
+2d_physics/layer_2="敌人"
+2d_physics/layer_3="子弹"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

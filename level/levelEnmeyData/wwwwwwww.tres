@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bts6gambpnmbh"]
+
+[ext_resource type="Script" path="res://level/levelEnmeyData/waveData.gd" id="1_2beyq"]
+
+[resource]
+script = ExtResource("1_2beyq")
+wave = null
+Enemys = null

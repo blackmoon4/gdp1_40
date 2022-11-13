@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://emxigj34rcq5"]
+
+[ext_resource type="PackedScene" uid="uid://tktf7akos8n2" path="res://game/enemy/EnemyBase.tscn" id="1_v8x1f"]
+
+[node name="EnemyBase" instance=ExtResource("1_v8x1f")]
+movespeedMin = 100
+movespeedMax = 200
+
+[node name="Label" parent="." index="5"]
+text = "名字BBBB"

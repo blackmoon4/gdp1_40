@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dij3ukdho1p70"]
+
+[ext_resource type="TileSet" path="res://level/tilemap/tileSet64.tres" id="1"]
+[ext_resource type="Script" path="res://game/level.gd" id="2"]
+[ext_resource type="PackedScene" path="res://game/enemy/EnemyBase.tscn" id="3"]
+
+[node name="level" type="Node2D"]
+script = ExtResource("2")
+
+[node name="TerrestDixing" type="TileMap" parent="."]
+visible = false
+tile_set = ExtResource("1")
+format = 2
+
+[node name="buildingLayer" type="TileMap" parent="."]
+tile_set = ExtResource("1")
+format = 2
+layer_0/tile_data = PackedInt32Array(131086, 1, 0, 262145, 2, 0, 393230, 1, 0)
+
+[node name="EnemyBase" parent="buildingLayer" groups=["enemy"] instance=ExtResource("3")]
+position = Vector2(1004, 186)
+
+[node name="EnemyBase2" parent="buildingLayer" groups=["enemy"] instance=ExtResource("3")]
+position = Vector2(1003, 446)
+
+[node name="EnemyBase3" parent="buildingLayer" groups=["enemy"] instance=ExtResource("3")]
+position = Vector2(1039, 307)

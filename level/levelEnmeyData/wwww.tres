@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://csg57v0q3nniw"]
+
+[ext_resource type="Script" path="res://level/levelEnmeyData/waveData.gd" id="1_dmhom"]
+
+[resource]
+script = ExtResource("1_dmhom")
+wave = null
+Enemys = [null]

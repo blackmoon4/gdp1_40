@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckm6l0inpv02b"]
+
+[ext_resource type="Script" path="res://tools/tools.gd" id="1_imo60"]
+
+[node name="tools" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_imo60")

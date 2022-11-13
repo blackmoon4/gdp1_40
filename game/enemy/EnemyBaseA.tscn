@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3c6gcr6b0tph"]
+
+[ext_resource type="PackedScene" uid="uid://tktf7akos8n2" path="res://game/enemy/EnemyBase.tscn" id="1_m3rv1"]
+[ext_resource type="Texture2D" uid="uid://dhvw2e4x78ta8" path="res://game/tower/tower1.png" id="2_03nlv"]
+
+[node name="EnemyBase" instance=ExtResource("1_m3rv1")]
+movespeedMin = 100
+movespeedMax = 150
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_03nlv")
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(-3.5, -29.5)
+
+[node name="Label" parent="." index="5"]
+text = "名字AAAA"
