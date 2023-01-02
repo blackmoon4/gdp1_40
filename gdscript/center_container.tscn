@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bckptv4nfdo37"]
+
+[ext_resource type="Script" path="res://gdscript/center_container.gd" id="1_2ug3k"]
+[ext_resource type="Resource" uid="uid://dthoi2yv48hnc" path="res://gdscript/MyItem.tres" id="2_v6mxf"]
+[ext_resource type="Texture2D" uid="uid://d3g6btm4uew81" path="res://icon.png" id="3_1eqrv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6jlcm"]
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Items" type="CenterContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+use_top_left = true
+script = ExtResource("1_2ug3k")
+item_property = ExtResource("2_v6mxf")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+texture = ExtResource("3_1eqrv")
+
+[node name="ItemName" type="Label" parent="."]
+layout_mode = 2
+offset_left = -20.0
+offset_top = -14.0
+offset_right = 20.0
+offset_bottom = 13.0
+text = "dddd"
+label_settings = SubResource("LabelSettings_6jlcm")

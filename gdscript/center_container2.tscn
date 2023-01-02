@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwb8k4mkvempu"]
+
+[ext_resource type="Script" path="res://gdscript/center_container.gd" id="1_2ug3k"]
+[ext_resource type="Resource" uid="uid://oly855eq2pax" path="res://gdscript/MyItem2.tres" id="2_8t8lr"]
+[ext_resource type="Texture2D" uid="uid://dhvw2e4x78ta8" path="res://game/tower/tower1.png" id="3_fpu6x"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6jlcm"]
+outline_size = 3
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Items" type="CenterContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+use_top_left = true
+script = ExtResource("1_2ug3k")
+item_property = ExtResource("2_8t8lr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+offset_left = -101.0
+offset_top = -120.0
+offset_right = 101.0
+offset_bottom = 120.0
+texture = ExtResource("3_fpu6x")
+
+[node name="ItemName" type="Label" parent="."]
+layout_mode = 2
+offset_left = -12.0
+offset_top = -14.0
+offset_right = 12.0
+offset_bottom = 13.0
+text = "ccc"
+label_settings = SubResource("LabelSettings_6jlcm")

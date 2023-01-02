@@ -32,7 +32,7 @@ layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
 layer_1/tile_data = PackedInt32Array(131073, 4, 1, 131074, 65540, 3, 131075, 65540, 1, 131076, 65540, 3, 131077, 65540, 3, 131078, 65540, 3, 131079, 131076, 1, 196609, 131076, 3, 196615, 131076, 2, 262151, 131076, 2, 327687, 4, 3, 327688, 65540, 3, 327689, 65540, 1, 327690, 65540, 1, 327691, 65540, 3, 327692, 65540, 1, 327693, 65540, 1, 327694, 65540, 1, 327695, 65540, 3, 327696, 65540, 1, 196608, 65540, 3, 262143, 65540, 1, 262142, 65540, 3, 262141, 65540, 1, 327697, 65540, 3, 327698, 65540, 1, 327699, 65540, 3, 327700, 65540, 1, 327701, 65540, 1, 327702, 65540, 3)
-layer_2/name = "tree"
+layer_2/name = "zhuangshi1"
 layer_2/enabled = true
 layer_2/modulate = Color(1, 1, 1, 1)
 layer_2/y_sort_enabled = false
@@ -42,10 +42,10 @@ layer_2/tile_data = PackedInt32Array(393220, 1, 0, 196619, 1, 0, 131083, 1, 0, 6
 
 [node name="Path2D" type="Path2D" parent="buildingLayer"]
 unique_name_in_owner = true
-position = Vector2(-24.3824, -1)
-scale = Vector2(1.20787, 1.01053)
 z_index = 1
 y_sort_enabled = true
+position = Vector2(-24.3824, -1)
+scale = Vector2(1.20787, 1.01053)
 curve = SubResource("1")
 
 [node name="mouseTilePos" parent="buildingLayer" instance=ExtResource("4")]

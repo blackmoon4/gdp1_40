@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://oly855eq2pax"]
+
+[ext_resource type="Texture2D" uid="uid://dhvw2e4x78ta8" path="res://game/tower/tower1.png" id="1_fio5h"]
+[ext_resource type="Script" path="res://gdscript/ItemProperty.gd" id="1_yq2iw"]
+
+[resource]
+script = ExtResource("1_yq2iw")
+item_name = "ccc"
+item_texture = ExtResource("1_fio5h")
+item_description = "dsad"
+price = 0
+damage = 33
+move_speed = 1.0
+attack_range = 1.0

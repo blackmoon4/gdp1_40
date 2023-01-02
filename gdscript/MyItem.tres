@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://dthoi2yv48hnc"]
+
+[ext_resource type="Texture2D" uid="uid://d3g6btm4uew81" path="res://icon.png" id="1_thq8y"]
+[ext_resource type="Script" path="res://gdscript/ItemProperty.gd" id="1_yq2iw"]
+
+[resource]
+script = ExtResource("1_yq2iw")
+item_name = "dddd"
+item_texture = ExtResource("1_thq8y")
+item_description = "就我耳机
+"
+price = 0
+damage = 0
+move_speed = 1.0
+attack_range = 1.0

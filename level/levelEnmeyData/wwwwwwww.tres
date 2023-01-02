@@ -1,8 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bts6gambpnmbh"]
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bts6gambpnmbh"]
 
 [ext_resource type="Script" path="res://level/levelEnmeyData/waveData.gd" id="1_2beyq"]
+[ext_resource type="PackedScene" uid="uid://b3c6gcr6b0tph" path="res://game/enemy/EnemyBaseA.tscn" id="1_qveav"]
+[ext_resource type="PackedScene" uid="uid://emxigj34rcq5" path="res://game/enemy/EnemyBaseB.tscn" id="2_jom8h"]
 
 [resource]
 script = ExtResource("1_2beyq")
 wave = null
-Enemys = null
+Enemys = [ExtResource("1_qveav"), ExtResource("2_jom8h")]

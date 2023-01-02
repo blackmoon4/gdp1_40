@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b14wk8hj8n8ht"]
+
+[ext_resource type="TileSet" uid="uid://b3v4341p3xdkh" path="res://level/tilemap/tileSet64_new2.tres" id="1_4glay"]
+[ext_resource type="Script" path="res://gdscript/TilemapGenarator.gd" id="1_30lp1"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_jij6v"]
+
+[node name="TileMapProcedural" type="TileMap"]
+editor_description = "程序化生成场景，用tilemap，使用Astar寻路"
+tile_set = ExtResource("1_4glay")
+format = 2
+layer_0/tile_data = PackedInt32Array(65537, 65536, 65536, 131073, 65536, 65536, 131074, 65536, 65536)
+script = ExtResource("1_30lp1")
+a = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.968627, 0.0588235, 0.666667, 0.623529)
+position = Vector2(576, 311)
+texture = SubResource("CanvasTexture_jij6v")
+region_enabled = true
+region_rect = Rect2(0, 0, 200, 100)

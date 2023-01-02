@@ -1,0 +1,55 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://b3v4341p3xdkh"]
+
+[ext_resource type="Texture2D" uid="uid://dl8vbpawj8mtt" path="res://level/tilemap/image/场景底1.png" id="1_671wj"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ygtbr"]
+resource_name = "grassLand"
+texture = ExtResource("1_671wj")
+texture_region_size = Vector2i(64, 64)
+0:0/next_alternative_id = 6
+0:0/0 = 0
+0:0/0/texture_offset = Vector2i(10, 10)
+0:0/1 = 1
+0:0/1/modulate = Color(0.690196, 0.694118, 1, 1)
+0:0/2 = 2
+0:0/2/modulate = Color(0.5776, 0.61104, 0.76, 1)
+0:0/2/custom_data_0 = 1
+1:0/next_alternative_id = 2
+1:0/0 = 0
+1:0/0/texture_offset = Vector2i(10, 10)
+1:0/1 = 1
+1:0/1/modulate = Color(0.231373, 0.690196, 1, 1)
+0:2/0 = 0
+0:1/0 = 0
+0:1/0/texture_offset = Vector2i(10, 10)
+1:1/0 = 0
+1:1/0/texture_offset = Vector2i(10, 10)
+0:3/0 = 0
+1:3/0 = 0
+2:0/0 = 0
+2:0/0/texture_offset = Vector2i(10, 10)
+2:2/0 = 0
+2:1/0 = 0
+2:1/0/texture_offset = Vector2i(10, 10)
+2:3/0 = 0
+3:0/next_alternative_id = 2
+3:0/0 = 0
+3:0/0/modulate = Color(0.988235, 0.988235, 0.988235, 1)
+3:0/0/probability = 0.1
+3:0/0/custom_data_0 = 1
+3:0/1 = 1
+3:0/1/modulate = Color(0.72549, 0.72549, 0.72549, 1)
+3:1/next_alternative_id = 2
+3:1/0 = 0
+3:1/0/texture_offset = Vector2i(10, 10)
+3:1/0/modulate = Color(0.988235, 0.988235, 0.988235, 1)
+3:1/0/custom_data_0 = 2
+3:1/1 = 1
+3:1/1/modulate = Color(0.576471, 0.611765, 0.760784, 1)
+
+[resource]
+tile_size = Vector2i(64, 64)
+navigation_layer_0/layers = 1
+custom_data_layer_0/name = "mydata"
+custom_data_layer_0/type = 2
+sources/0 = SubResource("TileSetAtlasSource_ygtbr")
