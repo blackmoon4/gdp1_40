@@ -18,17 +18,9 @@ item_property = ExtResource("2_v6mxf")
 [node name="TextureRect" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(40, 40)
 layout_mode = 2
-offset_left = -32.0
-offset_top = -32.0
-offset_right = 32.0
-offset_bottom = 32.0
 texture = ExtResource("3_1eqrv")
 
 [node name="ItemName" type="Label" parent="."]
 layout_mode = 2
-offset_left = -20.0
-offset_top = -14.0
-offset_right = 20.0
-offset_bottom = 13.0
 text = "dddd"
 label_settings = SubResource("LabelSettings_6jlcm")

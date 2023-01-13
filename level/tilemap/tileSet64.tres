@@ -1,8 +1,12 @@
-[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://c8o87mtph0g57"]
+[gd_resource type="TileSet" load_steps=10 format=3 uid="uid://c8o87mtph0g57"]
 
 [ext_resource type="Texture2D" uid="uid://dwtc08w2367t5" path="res://level/tilemap/image/autotile_template_2x2.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://c6koghtf0o4pb" path="res://level/tilemap/image/tileSet1.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://dl8vbpawj8mtt" path="res://level/tilemap/image/场景底1.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bmff4g2n2a4g1" path="res://level/tilemap/image/角色.png" id="3_61fra"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_5y01p"]
+tile_data = PackedInt32Array(0, 4, 0, 65536, 131076, 0, 131072, 4, 0, 1, 4, 0, 65537, 131076, 0, 131073, 131076, 0, 2, 131076, 0, 65538, 131076, 0, 131074, 131076, 0)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d0hw7"]
 texture = ExtResource("1")
@@ -18,6 +22,65 @@ texture_region_size = Vector2i(64, 64)
 2:0/0 = 0
 2:0/1 = 1
 2:0/1/modulate = Color(1, 1, 1, 0.498039)
+0:1/next_alternative_id = 2
+0:1/0 = 0
+0:1/0/modulate = Color(1, 1, 1, 0.701961)
+0:1/0/terrain_set = 0
+0:1/0/terrain = 1
+0:1/0/terrains_peering_bit/right_side = 1
+0:1/0/terrains_peering_bit/bottom_side = 1
+0:1/1 = 1
+1:1/0 = 0
+1:1/0/modulate = Color(1, 1, 1, 0.701961)
+1:1/0/terrain_set = 0
+1:1/0/terrain = 1
+1:1/0/terrains_peering_bit/right_side = 1
+1:1/0/terrains_peering_bit/left_side = 1
+2:1/0 = 0
+2:1/0/modulate = Color(1, 1, 1, 0.701961)
+2:1/0/terrain_set = 0
+2:1/0/terrain = 1
+2:1/0/terrains_peering_bit/bottom_side = 1
+2:1/0/terrains_peering_bit/left_side = 1
+2:2/0 = 0
+2:2/0/modulate = Color(1, 1, 1, 0.701961)
+2:2/0/terrain_set = 0
+2:2/0/terrain = 1
+2:2/0/terrains_peering_bit/bottom_side = 1
+2:2/0/terrains_peering_bit/top_side = 1
+2:3/0 = 0
+2:3/0/modulate = Color(1, 1, 1, 0.701961)
+2:3/0/terrain_set = 0
+2:3/0/terrain = 1
+2:3/0/terrains_peering_bit/left_side = 1
+2:3/0/terrains_peering_bit/top_side = 1
+1:3/0 = 0
+1:3/0/modulate = Color(1, 1, 1, 0.701961)
+1:3/0/terrain_set = 0
+1:3/0/terrain = 1
+1:3/0/terrains_peering_bit/right_side = 1
+1:3/0/terrains_peering_bit/left_side = 1
+0:3/0 = 0
+0:3/0/modulate = Color(1, 1, 1, 0.701961)
+0:3/0/terrain_set = 0
+0:3/0/terrain = 1
+0:3/0/terrains_peering_bit/right_side = 1
+0:3/0/terrains_peering_bit/top_side = 1
+0:2/0 = 0
+0:2/0/modulate = Color(1, 1, 1, 0.701961)
+0:2/0/terrain_set = 0
+0:2/0/terrain = 1
+0:2/0/terrains_peering_bit/bottom_side = 1
+0:2/0/terrains_peering_bit/top_side = 1
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_82yyu"]
+resource_name = "unit"
+texture = ExtResource("3_61fra")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qiico"]
 texture = ExtResource("3")
@@ -25,62 +88,80 @@ texture_region_size = Vector2i(64, 64)
 0:0/0 = 0
 0:0/0/modulate = Color(0.941176, 0.921569, 0.513726, 1)
 0:0/0/probability = 2.0
+0:0/0/custom_data_0 = 2
 1:0/0 = 0
 2:0/0 = 0
 2:0/0/modulate = Color(0.552941, 0.988235, 0.956863, 1)
 2:0/0/probability = 4.0
+2:0/0/custom_data_0 = 1
 0:1/0 = 0
 0:1/0/terrain_set = 0
 0:1/0/terrain = 0
 0:1/0/terrains_peering_bit/right_side = 0
 0:1/0/terrains_peering_bit/bottom_side = 0
+0:1/0/custom_data_0 = 1
 1:1/0 = 0
 1:1/0/terrain_set = 0
 1:1/0/terrain = 0
 1:1/0/terrains_peering_bit/right_side = 0
 1:1/0/terrains_peering_bit/left_side = 0
+1:1/0/custom_data_0 = 1
 2:1/0 = 0
 2:1/0/terrain_set = 0
 2:1/0/terrain = 0
 2:1/0/terrains_peering_bit/bottom_side = 0
 2:1/0/terrains_peering_bit/left_side = 0
+2:1/0/custom_data_0 = 1
 2:2/0 = 0
 2:2/0/terrain_set = 0
 2:2/0/terrain = 0
 2:2/0/terrains_peering_bit/bottom_side = 0
 2:2/0/terrains_peering_bit/top_side = 0
+2:2/0/custom_data_0 = 1
 2:3/0 = 0
 2:3/0/terrain_set = 0
 2:3/0/terrain = 0
 2:3/0/terrains_peering_bit/left_side = 0
 2:3/0/terrains_peering_bit/top_side = 0
+2:3/0/custom_data_0 = 1
 1:3/0 = 0
 1:3/0/terrain_set = 0
 1:3/0/terrain = 0
 1:3/0/terrains_peering_bit/right_side = 0
 1:3/0/terrains_peering_bit/left_side = 0
+1:3/0/custom_data_0 = 1
 0:3/0 = 0
 0:3/0/terrain_set = 0
 0:3/0/terrain = 0
 0:3/0/terrains_peering_bit/right_side = 0
 0:3/0/terrains_peering_bit/top_side = 0
+0:3/0/custom_data_0 = 1
 0:2/0 = 0
 0:2/0/terrain_set = 0
 0:2/0/terrain = 0
 0:2/0/terrains_peering_bit/bottom_side = 0
 0:2/0/terrains_peering_bit/top_side = 0
+0:2/0/custom_data_0 = 1
 3:0/0 = 0
 3:1/0 = 0
-3:2/next_alternative_id = 2
+3:2/next_alternative_id = 4
 3:2/0 = 0
 3:2/1 = 1
 3:2/1/modulate = Color(0.988235, 0, 0, 0.188235)
+3:2/3 = 3
+3:2/3/modulate = Color(0.0470588, 0.862745, 0.988235, 0.741176)
 
 [resource]
 tile_size = Vector2i(64, 64)
 terrain_set_0/mode = 2
 terrain_set_0/terrain_0/name = "road"
 terrain_set_0/terrain_0/color = Color(1, 0.278431, 0, 1)
+terrain_set_0/terrain_1/name = "unitpath"
+terrain_set_0/terrain_1/color = Color(0.5, 0.4375, 0.25, 1)
+custom_data_layer_0/name = "moveCost"
+custom_data_layer_0/type = 2
 sources/0 = SubResource("TileSetAtlasSource_d0hw7")
 sources/1 = SubResource("TileSetAtlasSource_o18hv")
 sources/4 = SubResource("TileSetAtlasSource_qiico")
+sources/2 = SubResource("TileSetAtlasSource_82yyu")
+pattern_0 = SubResource("TileMapPattern_5y01p")
