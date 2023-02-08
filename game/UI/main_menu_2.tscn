@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://u81cyw5tiuva"]
+[gd_scene load_steps=4 format=3]
 
-[ext_resource type="Script" path="res://UI/MainMenu.gd" id="1_prp4n"]
-[ext_resource type="Texture2D" uid="uid://b3b3pxviry6og" path="res://UI/image/bg1.jpg" id="2_a5lw1"]
+[ext_resource type="Script" path="res://game/UI/MainMenu.gd" id="1_prp4n"]
+[ext_resource type="Texture2D" uid="uid://b3b3pxviry6og" path="res://game/UI/image/bg1.jpg" id="2_a5lw1"]
+
 
 [sub_resource type="LabelSettings" id="LabelSettings_0o3rj"]
 font_size = 85

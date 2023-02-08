@@ -9,6 +9,8 @@ var blocks : Array[Vector2i]
 #可通行的格子
 var mapPassTiles : Array[Vector2i]
 
+
+
 #地图所有格子数据
 #key是地图上的格子坐标 Vector2i，  value是格子数据 GameMapTileData
 var mapData = {}
@@ -18,6 +20,7 @@ var mapData = {}
 @onready var unitsParent: Node2D = $Units
 @onready var select_tile_mark: Node2D = $SelectTileMark
 @onready var gameui: GameUI3 = $CanvasLayer/UI
+
 
 @export var unitPS : PackedScene
 #生成的单位数量
@@ -32,8 +35,6 @@ var units = {}
 ##当前单位寻路图的字典，key是节点id：int，value是对应tilemap上的格子坐标Vector2i
 #寻路，值为当前路径的坐标数组Vector2i
 var unitpath = []
-
-
 
 
 #当前鼠标悬停的格子
@@ -402,7 +403,7 @@ func showUnitMoveRange():
 
 
 
-#构建用来进行AStar寻路的图
+#构建用来进行AStar寻路的图，  这里就是用来找出角色的可移动区域的节点
 func buildAStar2DTiles(start:Vector2i,step:int):
 	clearAstarMap()
 	

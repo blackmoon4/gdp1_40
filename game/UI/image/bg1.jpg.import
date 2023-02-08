@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ff8etg6ogfgi"
-path="res://.godot/imported/按钮_暂停.png-a01fbc9fbf89c00cc456172ec5d562d6.ctex"
+uid="uid://b3b3pxviry6og"
+path="res://.godot/imported/bg1.jpg-8509b871660459e1cb8cc66564f50c57.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/image/按钮_暂停.png"
-dest_files=["res://.godot/imported/按钮_暂停.png-a01fbc9fbf89c00cc456172ec5d562d6.ctex"]
+source_file="res://game/UI/image/bg1.jpg"
+dest_files=["res://.godot/imported/bg1.jpg-8509b871660459e1cb8cc66564f50c57.ctex"]
 
 [params]
 

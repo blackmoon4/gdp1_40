@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7esfhkf3fxc8"
-path="res://.godot/imported/按钮_播放.png-67aed9025cbda833e50d4d2a521a3caf.ctex"
+path="res://.godot/imported/按钮_播放.png-1782d6034db2ecdded81b62fd85c2acf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/image/按钮_播放.png"
-dest_files=["res://.godot/imported/按钮_播放.png-67aed9025cbda833e50d4d2a521a3caf.ctex"]
+source_file="res://game/UI/image/按钮_播放.png"
+dest_files=["res://.godot/imported/按钮_播放.png-1782d6034db2ecdded81b62fd85c2acf.ctex"]
 
 [params]
 

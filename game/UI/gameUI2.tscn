@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bep0nr7k0pywb"]
+[gd_scene load_steps=6 format=3]
 
-[ext_resource type="Script" path="res://UI/gameUI.gd" id="2"]
-[ext_resource type="Texture2D" uid="uid://ff8etg6ogfgi" path="res://UI/image/按钮_暂停.png" id="3"]
-[ext_resource type="Texture2D" uid="uid://7esfhkf3fxc8" path="res://UI/image/按钮_播放.png" id="4"]
+[ext_resource type="Script" path="res://game/UI/gameUI.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://ff8etg6ogfgi" path="res://game/UI/image/按钮_暂停.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://7esfhkf3fxc8" path="res://game/UI/image/按钮_播放.png" id="4"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_lhxxr"]
 keycode = 32

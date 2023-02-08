@@ -23,6 +23,7 @@ class_name LevelBase
 #onready var gameui = preload("res://UI/gameUI.tscn")
 var gameui = preload("res://UI/gameUI2.tscn")
 
+
 #onready var maingameRef : TDMaingame = TD_global.getMaingame()
 
 # 起点，不止一个

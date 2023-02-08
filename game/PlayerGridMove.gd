@@ -5,6 +5,7 @@ var map:GameMap    #游戏地图
 var pos:Vector2i   #玩家角色当前位置坐标
 var moveDirection:Vector2i   #角色移动方向
 
+@export var unitData : UnitData
 
 #当进入一个格子时,tileid是进入的格子
 signal tile_entered(tileid)
