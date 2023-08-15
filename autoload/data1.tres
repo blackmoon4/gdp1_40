@@ -1,7 +1,7 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://drmifs516b1qs"]
+[gd_resource type="Resource" script_class="TD_DataBase" load_steps=2 format=3 uid="uid://drmifs516b1qs"]
 
 [ext_resource type="Script" path="res://autoload/dataBase.gd" id="1"]
 
 [resource]
 script = ExtResource("1")
-a = null
+a = [1, 2, 4]

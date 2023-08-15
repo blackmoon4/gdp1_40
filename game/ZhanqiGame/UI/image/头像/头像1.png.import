@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl8vbpawj8mtt"
-path="res://.godot/imported/场景底1.png-a585dbd8f3876de42c6eb5a7ec5d857d.ctex"
+uid="uid://b2his0k3qwsrk"
+path="res://.godot/imported/头像1.png-aa80527d992f33f6d8129c21117631bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level/tilemap/image/场景底1.png"
-dest_files=["res://.godot/imported/场景底1.png-a585dbd8f3876de42c6eb5a7ec5d857d.ctex"]
+source_file="res://game/ZhanqiGame/UI/image/头像/头像1.png"
+dest_files=["res://.godot/imported/头像1.png-aa80527d992f33f6d8129c21117631bd.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

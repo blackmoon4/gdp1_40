@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=3 uid="uid://slvki1p7eafa"]
+
+[ext_resource type="TileSet" uid="uid://c8o87mtph0g57" path="res://level/tilemap/tileSet64.tres" id="1_jt11x"]
+[ext_resource type="Script" path="res://game/ZhanqiGame/GameTileMap.gd" id="2_libkf"]
+[ext_resource type="PackedScene" uid="uid://hqlypyidkskt" path="res://game/ZhanqiGame/UnitGridMoveBase.tscn" id="3_jpecw"]
+[ext_resource type="PackedScene" uid="uid://cktn0b0deusds" path="res://game/tongyong/select_tile_mark.tscn" id="4_kmfke"]
+[ext_resource type="PackedScene" uid="uid://b42n03jhcj2c2" path="res://game/tongyong/mouseTilePos.tscn" id="5_id7t1"]
+[ext_resource type="PackedScene" uid="uid://iyo3lfbih7yy" path="res://game/tongyong/camera_map.tscn" id="6_2tqiv"]
+[ext_resource type="PackedScene" uid="uid://di2hmuo6vip7l" path="res://game/ZhanqiGame/gameUI3.tscn" id="7_2y77t"]
+
+[node name="map11" type="TileMap"]
+tile_set = ExtResource("1_jt11x")
+format = 2
+layer_0/name = "ground"
+layer_0/tile_data = PackedInt32Array(-65535, 4, 0, -65533, 131076, 0, 1, 4, 0, -3, 4, 0, 262141, 4, 0, 393213, 4, 0, -2, 4, 0, 262142, 4, 0, 393214, 131076, 0, 262143, 4, 0, 393215, 131076, 0, 131072, 4, 0, 196608, 131076, 0, 327680, 4, 0, 131073, 131076, 0, 196609, 131076, 0, 327681, 4, 0, -65534, 131076, 0, 2, 131076, 0, 131074, 4, 0, 196610, 131076, 0, -131069, 4, 0, 3, 4, 0, 131075, 4, 0, 196611, 131076, 0, 327683, 4, 0, -131068, 4, 0, -65532, 4, 0, 4, 131076, 0, 131076, 4, 0, 196612, 4, 0, 327684, 131076, 0, -131067, 4, 0, -65531, 4, 0, 5, 131076, 0, 131077, 131076, 0, 196613, 4, 0, 262149, 4, 0, 327685, 131076, 0, 65532, 4, 0, 262138, 4, 0, 262139, 4, 0, 262140, 4, 0, 131068, 4, 0, -65542, 4, 0, -6, 4, 0, 131064, 131076, 0, 131065, 4, 0, 196601, 4, 0, 262136, 4, 0, 196600, 131076, 0, 393208, 4, 0, 262137, 4, 0, 327682, 4, 0, 327672, 131076, 0, 393209, 131076, 0, 393210, 131076, 0, 393211, 131076, 0, 393212, 131076, 0, -8, 131076, 0, -65543, 131076, 0, -7, 131076, 0, 131066, 131076, 0, 196602, 131076, 0, 196603, 131076, 0, 131067, 131076, 0, 65531, 131076, 0, -5, 131076, 0, -4, 131076, 0, -65536, 131076, 0, -1, 131076, 0, 65535, 131076, 0, 131069, 131076, 0, 196605, 131076, 0, 196604, 131076, 0, 196606, 131076, 0, 196607, 131076, 0, 0, 131076, 0, 327679, 4, 0, 65540, 131076, 0)
+layer_1/name = "block"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array(131074, 196612, 0, 196609, 196612, 1, -1, 196612, 0, 65535, 196612, 0, 196612, 196612, 1, -65533, 196612, 1, 196607, 196612, 1, 196604, 196612, 0, 65532, 196612, 0)
+layer_2/name = "mark"
+layer_2/enabled = true
+layer_2/modulate = Color(1, 1, 1, 1)
+layer_2/y_sort_enabled = false
+layer_2/y_sort_origin = 0
+layer_2/z_index = 0
+layer_2/tile_data = PackedInt32Array(131077, 65540, 0, 196602, 65540, 0, -8, 65540, 0, 393208, 65540, 0)
+layer_3/name = "path"
+layer_3/enabled = true
+layer_3/modulate = Color(1, 1, 1, 1)
+layer_3/y_sort_enabled = false
+layer_3/y_sort_origin = 0
+layer_3/z_index = 1
+layer_3/tile_data = PackedInt32Array()
+layer_4/name = "unit"
+layer_4/enabled = true
+layer_4/modulate = Color(1, 1, 1, 1)
+layer_4/y_sort_enabled = false
+layer_4/y_sort_origin = 0
+layer_4/z_index = 0
+layer_4/tile_data = PackedInt32Array()
+layer_5/name = "moveRange"
+layer_5/enabled = true
+layer_5/modulate = Color(0.235294, 0.807843, 0.968627, 0.701961)
+layer_5/y_sort_enabled = false
+layer_5/y_sort_origin = 0
+layer_5/z_index = 0
+layer_5/tile_data = PackedInt32Array()
+script = ExtResource("2_libkf")
+unitPS = ExtResource("3_jpecw")
+spawnUnitNum = 5
+
+[node name="SelectTileMark" parent="." instance=ExtResource("4_kmfke")]
+
+[node name="mouseTilePos" parent="." instance=ExtResource("5_id7t1")]
+
+[node name="Units" type="Node2D" parent="."]
+editor_description = "所有单位
+"
+z_index = 1
+y_sort_enabled = true
+
+[node name="Camera2D" parent="." instance=ExtResource("6_2tqiv")]
+position_smoothing_speed = 16.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("7_2y77t")]

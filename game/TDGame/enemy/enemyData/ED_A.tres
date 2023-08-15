@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://game/TDGame/enemy/enemyData/enemyData.gd" id="1_2l4na"]
+[ext_resource type="Texture2D" uid="uid://d3g6btm4uew81" path="res://icon.png" id="1_gq8o1"]
+
+[resource]
+script = ExtResource("1_2l4na")
+Name = "怪物AAAA"
+HP = null
+Damage = null
+MoveSpeed = null
+Textures = ExtResource("1_gq8o1")
+metadata/_editor_prop_ptr_Textures = NodePath("")

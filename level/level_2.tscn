@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dij3ukdho1p70"]
+[gd_scene load_steps=4 format=3 uid="uid://de5hlbyx46grt"]
 
-[ext_resource type="TileSet" path="res://level/tilemap/tileSet64.tres" id="1"]
-[ext_resource type="Script" path="res://game/level.gd" id="2"]
-[ext_resource type="PackedScene" path="res://game/enemy/EnemyBase.tscn" id="3"]
+[ext_resource type="TileSet" uid="uid://c8o87mtph0g57" path="res://level/tilemap/tileSet64.tres" id="1"]
+[ext_resource type="Script" path="res://game/TDGame/TDMap.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://tktf7akos8n2" path="res://game/TDGame/enemy/EnemyBase.tscn" id="3"]
 
 [node name="level" type="Node2D"]
 script = ExtResource("2")

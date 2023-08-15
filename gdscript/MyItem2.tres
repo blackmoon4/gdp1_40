@@ -1,6 +1,6 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://oly855eq2pax"]
+[gd_resource type="Resource" load_steps=3 format=3]
 
-[ext_resource type="Texture2D" uid="uid://dhvw2e4x78ta8" path="res://game/tower/tower1.png" id="1_fio5h"]
+[ext_resource type="Texture2D" uid="uid://dhvw2e4x78ta8" path="res://game/TDGame/tower/tower1.png" id="1_fio5h"]
 [ext_resource type="Script" path="res://gdscript/ItemProperty.gd" id="1_yq2iw"]
 
 [resource]

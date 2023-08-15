@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://cton8sojy1vyo"]
-
-[ext_resource type="Script" path="res://test/CameraMap.gd" id="1_a8f70"]
-
-[node name="Camera2D" type="Camera2D"]
-current = true
-position_smoothing_enabled = true
-script = ExtResource("1_a8f70")

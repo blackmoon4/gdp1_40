@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" uid="uid://6giutq1ypo7f" path="res://game/TDGame/tower/TowerBase.tscn" id="1"]
+[ext_resource type="Script" path="res://game/TDGame/tower/TowerA1.gd" id="2"]
+
+[node name="TowerBase" instance=ExtResource("1")]
+script = ExtResource("2")
+atkRange = 2.0
+
+[node name="Sprite2D" parent="." index="0"]
+modulate = Color(0.027451, 0.996078, 0.247059, 1)

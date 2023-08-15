@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UnitData" load_steps=4 format=3]
+
+[ext_resource type="Texture2D" uid="uid://d3g6btm4uew81" path="res://icon.png" id="1_1xxtt"]
+[ext_resource type="Script" path="res://game/TDGame/UnitData.gd" id="2_dkaqg"]
+[ext_resource type="Resource" uid="uid://d3orn2w3kpfrh" path="res://test/my_res01_01.tres" id="3_pi8s1"]
+
+[resource]
+script = ExtResource("2_dkaqg")
+Name = "怪物名字替代"
+HP = 100
+Damage = 1
+Defend = 0
+MoveSpeed = 1.0
+TouxiangTex = ExtResource("1_1xxtt")
+testres = ExtResource("3_pi8s1")

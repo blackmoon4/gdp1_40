@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://game/TDGame/tower/TowerBase.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dhvw2e4x78ta8" path="res://game/TDGame/tower/tower1.png" id="2"]
+[ext_resource type="PackedScene" path="res://game/TDGame/tower/bullet/BulletBase.tscn" id="3"]
+[ext_resource type="Texture2D" uid="uid://c50w3yq4kftbv" path="res://game/TDGame/tower/image/paoguan1.png" id="4"]
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 203.039
+
+[node name="TowerBase" type="Node2D"]
+script = ExtResource("1")
+bullet = ExtResource("3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0.439216, 1, 1)
+position = Vector2(0, -12.5)
+scale = Vector2(0.465347, 0.320833)
+texture = ExtResource("2")
+
+[node name="paoguan" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -24)
+texture = ExtResource("4")
+offset = Vector2(26.045, 0)
+
+[node name="Position2D_atk" type="Marker2D" parent="paoguan"]
+unique_name_in_owner = true
+position = Vector2(59, 0)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="AtkRange" type="Area2D" parent="."]
+modulate = Color(1, 1, 1, 0.356863)
+show_behind_parent = true
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AtkRange"]
+shape = SubResource("1")
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="area_entered" from="AtkRange" to="." method="_on_AtkRange_area_entered"]
+[connection signal="area_exited" from="AtkRange" to="." method="_on_AtkRange_area_exited"]

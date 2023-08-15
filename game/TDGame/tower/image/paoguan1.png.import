@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl8vbpawj8mtt"
-path="res://.godot/imported/场景底1.png-a585dbd8f3876de42c6eb5a7ec5d857d.ctex"
+uid="uid://c50w3yq4kftbv"
+path="res://.godot/imported/paoguan1.png-f802e4e869154e86cdbed3bb1a32f26e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://level/tilemap/image/场景底1.png"
-dest_files=["res://.godot/imported/场景底1.png-a585dbd8f3876de42c6eb5a7ec5d857d.ctex"]
+source_file="res://game/TDGame/tower/image/paoguan1.png"
+dest_files=["res://.godot/imported/paoguan1.png-f802e4e869154e86cdbed3bb1a32f26e.ctex"]
 
 [params]
 
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

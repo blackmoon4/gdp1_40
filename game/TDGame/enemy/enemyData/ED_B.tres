@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://game/TDGame/enemy/enemyData/enemyData.gd" id="1_iaq8q"]
+
+[sub_resource type="Gradient" id="Gradient_gtef0"]
+colors = PackedColorArray(0, 0, 0, 1, 1, 0, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_yxa6u"]
+gradient = SubResource("Gradient_gtef0")
+
+[resource]
+script = ExtResource("1_iaq8q")
+Name = "怪物BBBB"
+HP = null
+Damage = null
+MoveSpeed = null
+Textures = SubResource("GradientTexture1D_yxa6u")

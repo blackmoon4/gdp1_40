@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://iyo3lfbih7yy"]
+
+[ext_resource type="Script" path="res://game/tongyong/CameraMap.gd" id="1_xo1lp"]
+
+[node name="Camera2D" type="Camera2D"]
+process_mode = 3
+position_smoothing_enabled = true
+script = ExtResource("1_xo1lp")
