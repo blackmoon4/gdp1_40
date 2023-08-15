@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cihn4ku0xkh4k"]
+
+[node name="testAutoloadScene" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 354.0
+offset_top = 32.0
+offset_right = 629.0
+offset_bottom = 105.0
+grow_horizontal = 2
+text = "这是自动加载场景"

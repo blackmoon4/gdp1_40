@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bukg54m4ojhas"
+
+[deps]
+
+files=["res://test/测试csv.aa.translation", "res://test/测试csv.bb.translation", "res://test/测试csv.cc.translation", "res://test/测试csv.dd.translation"]
+
+source_file="res://test/测试csv.csv"
+dest_files=["res://test/测试csv.aa.translation", "res://test/测试csv.bb.translation", "res://test/测试csv.cc.translation", "res://test/测试csv.dd.translation"]
+
+[params]
+
+compress=true
+delimiter=0

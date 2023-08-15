@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://kb8d35pqnw7n"]
+
+[ext_resource type="Texture2D" uid="uid://d3g6btm4uew81" path="res://icon.png" id="1"]
+
+[sub_resource type="Curve2D" id="1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 69, 158, 0, 0, 0, 0, 261, 273, 0, 0, 0, 0, 491, 266, 0, 0, 0, 0, 594, 288, 0, 0, 0, 0, 175, 300)
+}
+point_count = 5
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("1")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(69, 158)
+rotation = 0.539654
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../../Node2D/Sprite2D")
+
+[node name="PathFollow2D3" type="PathFollow2D" parent="Path2D"]
+position = Vector2(26.1057, 132.308)
+rotation = 0.539654
+h_offset = -50.0
+
+[node name="RemoteTransform2D2" type="RemoteTransform2D" parent="Path2D/PathFollow2D3"]
+position = Vector2(40.9744, -0.000335693)
+rotation = 3.53903e-05
+remote_path = NodePath("../../../Node2D/Sprite2")
+update_rotation = false
+update_scale = false
+
+[node name="PathFollow2D2" type="PathFollow2D" parent="Path2D"]
+position = Vector2(51.8423, 147.723)
+rotation = 0.539654
+h_offset = -20.0
+
+[node name="RemoteTransform2D3" type="RemoteTransform2D" parent="Path2D/PathFollow2D2"]
+position = Vector2(43.5128, 24.6871)
+rotation = 3.13981
+remote_path = NodePath("../../../Node2D/Sprite3")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+position = Vector2(69, 158)
+rotation = 0.539654
+texture = ExtResource("1")
+
+[node name="Sprite2" type="Sprite2D" parent="Node2D"]
+position = Vector2(61.2572, 153.362)
+rotation = -0.0304493
+texture = ExtResource("1")
+
+[node name="Sprite3" type="Sprite2D" parent="Node2D"]
+position = Vector2(76.4861, 191.261)
+rotation = -2.60372
+texture = ExtResource("1")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://test/testFreeDelete.gd" type="Script" id=1]
+
+[node name="testFreeDelete" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 204, 93 )
+
+[node name="Node2D子" type="Node2D" parent="Node2D"]
+position = Vector2( 149, 118 )
+
+[connection signal="tree_exiting" from="." to="." method="_on_testFreeDelete_tree_exiting"]
+[connection signal="child_exiting_tree" from="Node2D" to="." method="_on_Node2D_child_exiting_tree"]
+[connection signal="tree_exited" from="Node2D" to="." method="_on_Node2D_tree_exited"]
+[connection signal="tree_exiting" from="Node2D" to="." method="_on_Node2D_tree_exiting"]

@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://ckms63ad8lsp5"]
+
+[node name="testAstar2D" type="TileMap"]
+format = 2

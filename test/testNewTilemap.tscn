@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://k3p53tyrbsnk"]
+
+[ext_resource type="TileSet" uid="uid://c2xod703dqbkv" path="res://level/tilemap/tileSet64_new.tres" id="1_tatmy"]
+[ext_resource type="Script" path="res://test/testNewTilemap.gd" id="2_gib3s"]
+[ext_resource type="Texture2D" uid="uid://d3g6btm4uew81" path="res://icon.png" id="3_qqn81"]
+
+[node name="TestNewTilemap" type="TileMap"]
+position = Vector2(83, 73)
+tile_set = ExtResource("1_tatmy")
+format = 2
+layer_0/name = "layer00"
+layer_0/tile_data = PackedInt32Array(65537, 0, 0, 65538, 131073, 0, 65543, 65537, 0, 196617, 65537, 3, 196618, 131073, 3, 327690, 65537, 3, 262157, 65537, 3, 262158, 131073, 3, 393230, 65537, 3)
+layer_1/name = "layer22"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array(262149, 196609, 0, 327685, 65537, 1, 393221, 131073, 2, 262148, 131073, 3, 262147, 65537, 3, 327686, 131073, 0, 393222, 131073, 2, 393220, 65537, 3, 196615, 1, 0, 262151, 1, 1, 327687, 196609, 1, 393223, 196609, 2)
+script = ExtResource("2_gib3s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.316296, 0.316296)
+texture = ExtResource("3_qqn81")
+region_rect = Rect2(0, 0, 10, 10)

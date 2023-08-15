@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1qsnbub2m544"]
+
+[ext_resource type="Script" path="res://test/testDictionary.gd" id="1_evil2"]
+
+[node name="testDictionary" type="Node"]
+script = ExtResource("1_evil2")
+dic = {
+1: 2,
+"aaaa": 4
+}

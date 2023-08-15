@@ -1,0 +1,85 @@
+[gd_scene load_steps=4 format=3 uid="uid://chtoqtsffbyay"]
+
+[ext_resource type="Texture2D" uid="uid://d3g6btm4uew81" path="res://icon.png" id="2"]
+
+[sub_resource type="GDScript" id="GDScript_mlweq"]
+script/source = "extends Node2D
+
+@onready var sprite = $\"%pppp\"
+
+var v:=Vector2()
+var speed := 100
+
+func _ready():
+	pass
+
+
+
+
+func _process(delta):
+	v = Vector2()
+	if Input.is_action_pressed(\"ui_right\"):
+		v.x += 1
+	if Input.is_action_pressed(\"ui_left\"):
+		v.x -= 1
+	
+	v = v.normalized()*speed*delta
+	sprite.position +=v
+
+	
+
+
+func _on_Area2D_area_entered(area):
+	print(\"111\",area.get_parent().name)
+	pass # Replace with function body.
+
+
+func _on_Area2D2222_area_entered(area):
+	print(\"222\",area.get_parent().name)
+	pass # Replace with function body.
+
+
+func pppp_area_entered(area):
+	print(area.get_parent().name)
+	pass # Replace with function body.
+"
+
+[sub_resource type="CircleShape2D" id="1"]
+radius = 45.1774
+
+[node name="testCollision" type="Node2D"]
+script = SubResource("GDScript_mlweq")
+
+[node name="Sprite2222" type="Sprite2D" parent="."]
+position = Vector2(302, 280)
+texture = ExtResource("2")
+
+[node name="Area2D" type="Area2D" parent="Sprite2222"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2222/Area2D"]
+shape = SubResource("1")
+
+[node name="Sprite1111" type="Sprite2D" parent="."]
+position = Vector2(625, 281)
+texture = ExtResource("2")
+
+[node name="Area2D" type="Area2D" parent="Sprite1111"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite1111/Area2D"]
+shape = SubResource("1")
+
+[node name="pppp" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(468, 283)
+texture = ExtResource("2")
+
+[node name="Area2D" type="Area2D" parent="pppp"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pppp/Area2D"]
+shape = SubResource("1")
+
+[connection signal="area_entered" from="Sprite2222/Area2D" to="." method="_on_Area2D2222_area_entered"]
+[connection signal="area_entered" from="Sprite1111/Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="pppp/Area2D" to="." method="fff_area_entered"]

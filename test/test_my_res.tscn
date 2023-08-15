@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwgfv5uw6qfwc"]
+
+[ext_resource type="Script" path="res://test/test_my_res.gd" id="1_laqs0"]
+[ext_resource type="Resource" uid="uid://d3orn2w3kpfrh" path="res://test/my_res01_01.tres" id="2_ffxfv"]
+[ext_resource type="Resource" uid="uid://pmdruu71lhb0" path="res://test/my_res01_02.tres" id="3_u4w1j"]
+
+[node name="testMyRes" type="Node"]
+script = ExtResource("1_laqs0")
+a = [ExtResource("2_ffxfv"), ExtResource("3_u4w1j")]

@@ -1,0 +1,319 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Texture2D" uid="uid://7esfhkf3fxc8" path="res://game/TDGame/UI/image/按钮_播放.png" id="1_nv135"]
+
+[sub_resource type="Curve" id="Curve_t2sgk"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.162907, 1), 0.0, 0.0614791, 0, 0, Vector2(0.834587, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Gradient" id="Gradient_7nc4i"]
+offsets = PackedFloat32Array(0, 0.494681, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.494681)
+
+[node name="testParticle" type="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(315, 270)
+rotation = 0.81571
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(62.2718, -98.0049)
+rotation = -0.864359
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(42.2717, -27.0049)
+rotation = -0.864359
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(21.2718, 22.9951)
+rotation = -0.864359
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D4" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(-71.5399, -79.0679)
+rotation = -0.864359
+scale = Vector2(3.70056, 2.41928)
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D5" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(-67.54, -145.068)
+rotation = 1.49988
+scale = Vector2(3.70056, 2.41928)
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D6" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(184.46, -34.0678)
+rotation = -0.864359
+scale = Vector2(3.70056, 2.41928)
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D7" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(156.46, 30.9323)
+rotation = -2.46508
+scale = Vector2(3.70056, 2.41928)
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D8" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(-20.7282, 29.9951)
+rotation = -0.864359
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D9" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(-40.7283, 100.995)
+rotation = -0.864359
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D10" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(-61.7282, 150.995)
+rotation = -0.864359
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D11" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(-154.54, 48.9321)
+rotation = -0.864359
+scale = Vector2(3.70056, 2.41928)
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D12" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(-150.54, -17.0679)
+rotation = 1.49988
+scale = Vector2(3.70056, 2.41928)
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D13" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(101.46, 93.9322)
+rotation = -0.864359
+scale = Vector2(3.70056, 2.41928)
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02
+
+[node name="CPUParticles2D14" type="CPUParticles2D" parent="Node2D"]
+position = Vector2(73.4601, 158.932)
+rotation = -2.46508
+scale = Vector2(3.70056, 2.41928)
+amount = 100
+texture = ExtResource("1_nv135")
+particle_flag_align_y = true
+direction = Vector2(3.192, 1)
+spread = 26.63
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 10.0
+radial_accel_min = 300.0
+radial_accel_max = 300.0
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_t2sgk")
+color = Color(0.980392, 0.333333, 0.027451, 1)
+color_ramp = SubResource("Gradient_7nc4i")
+hue_variation_min = -0.35
+hue_variation_max = -0.02

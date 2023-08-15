@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="MyRes01" load_steps=2 format=3 uid="uid://d3orn2w3kpfrh"]
+
+[ext_resource type="Script" path="res://test/MyRes.gd" id="1_wplx0"]
+
+[resource]
+resource_name = "aaa01"
+script = ExtResource("1_wplx0")
+var1_name = "namename"
+var2_a = 10
+var3 = Vector2i(0, 0)
+var4 = 0
+var5_enum = 0
+var6_range = 0.5

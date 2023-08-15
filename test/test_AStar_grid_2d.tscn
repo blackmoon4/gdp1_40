@@ -1,0 +1,90 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://test/test_AStar_grid_2d.gd" id="1_1jh16"]
+[ext_resource type="TileSet" uid="uid://c8o87mtph0g57" path="res://level/tilemap/tileSet64.tres" id="1_7ugeq"]
+[ext_resource type="PackedScene" uid="uid://hqlypyidkskt" path="res://game/ZhanqiGame/UnitGridMoveBase.tscn" id="3_6nfwc"]
+[ext_resource type="PackedScene" uid="uid://b42n03jhcj2c2" path="res://game/tongyong/mouseTilePos.tscn" id="4_jyfef"]
+[ext_resource type="PackedScene" uid="uid://cktn0b0deusds" path="res://game/tongyong/select_tile_mark.tscn" id="4_kitso"]
+[ext_resource type="Script" path="res://game/tongyong/CameraMap.gd" id="6_ynn37"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rf4oy"]
+font_size = 24
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[node name="testAStarGrid2D" type="TileMap"]
+tile_set = ExtResource("1_7ugeq")
+format = 2
+layer_0/name = "ground"
+layer_0/tile_data = PackedInt32Array(196608, 131076, 0, 262144, 131076, 0, 327680, 4, 0, 393216, 4, 0, 458752, 4, 0, 196609, 4, 0, 262145, 131076, 0, 327681, 131076, 0, 393217, 131076, 0, 458753, 131076, 0, 2, 4, 0, 65538, 131076, 0, 131074, 4, 0, 196610, 131076, 0, 262146, 4, 0, 327682, 131076, 0, 393218, 131076, 0, 458754, 131076, 0, 3, 131076, 0, 65539, 4, 0, 131075, 131076, 0, 196611, 4, 0, 262147, 131076, 0, 327683, 131076, 0, 393219, 4, 0, 458755, 4, 0, 4, 131076, 0, 65540, 131076, 0, 131076, 131076, 0, 196612, 4, 0, 262148, 4, 0, 327684, 131076, 0, 393220, 4, 0, 458756, 131076, 0, 5, 131076, 0, 65541, 131076, 0, 131077, 4, 0, 196613, 131076, 0, 262149, 131076, 0, 327685, 4, 0, 393221, 4, 0, 6, 131076, 0, 65542, 4, 0, 131078, 131076, 0, 196614, 4, 0, 7, 131076, 0, 65543, 131076, 0, 131079, 131076, 0, 196615, 4, 0, 327678, 131076, 0, 393214, 4, 0, 458750, 131076, 0, 262143, 4, 0, 327679, 131076, 0, 393215, 131076, 0, 458751, 131076, 0, 65544, 131076, 0, 131080, 131076, 0, 196616, 131076, 0, 131081, 131076, 0, 196617, 131076, 0, 262151, 131076, 0, 262150, 131076, 0, 327686, 131076, 0, 131073, 4, 0, 65537, 131076, 0, 131072, 131076, 0, 327687, 131076, 0, 393223, 131076, 0, 393222, 131076, 0, 262152, 4, 0, 262153, 4, 0, 327689, 131076, 0, 327688, 4, 0)
+layer_1/name = "block"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array(6, 196612, 0, 262148, 196612, 0, 262147, 196612, 0, 5, 196612, 0, 65541, 196612, 0, 131074, 196612, 0, 196609, 196612, 1, 327686, 196612, 1, 262150, 196612, 1, 327678, 196612, 0, 458750, 196612, 0, 393217, 196612, 1)
+layer_2/name = "mark"
+layer_2/enabled = true
+layer_2/modulate = Color(1, 1, 1, 1)
+layer_2/y_sort_enabled = false
+layer_2/y_sort_origin = 0
+layer_2/z_index = 0
+layer_2/tile_data = PackedInt32Array(131077, 65540, 0, 262146, 65540, 0)
+layer_3/name = "path"
+layer_3/enabled = true
+layer_3/modulate = Color(1, 1, 1, 1)
+layer_3/y_sort_enabled = false
+layer_3/y_sort_origin = 0
+layer_3/z_index = 0
+layer_3/tile_data = PackedInt32Array()
+layer_4/name = "unit"
+layer_4/enabled = true
+layer_4/modulate = Color(1, 1, 1, 1)
+layer_4/y_sort_enabled = false
+layer_4/y_sort_origin = 0
+layer_4/z_index = 0
+layer_4/tile_data = PackedInt32Array()
+script = ExtResource("1_1jh16")
+playerScene = ExtResource("3_6nfwc")
+
+[node name="SelectTileMark" parent="." instance=ExtResource("4_kitso")]
+
+[node name="mouseTilePos" parent="." instance=ExtResource("4_jyfef")]
+
+[node name="Units" type="Node2D" parent="."]
+editor_description = "所有单位
+"
+z_index = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+script = ExtResource("6_ynn37")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_top = 110.0
+offset_right = 200.0
+offset_bottom = 150.0
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/UI/HBoxContainer"]
+layout_mode = 2
+text = "路径移动步数："
+label_settings = SubResource("LabelSettings_rf4oy")
+
+[node name="Label2" type="Label" parent="CanvasLayer/UI/HBoxContainer"]
+layout_mode = 2
+text = "00"
+label_settings = SubResource("LabelSettings_rf4oy")

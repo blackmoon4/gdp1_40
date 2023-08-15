@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://fpmnoa14jw50"]
+
+[ext_resource type="Script" path="res://test/testOneTimer.gd" id="1_mhe3w"]
+
+[node name="testOneTimer" type="Node2D"]
+script = ExtResource("1_mhe3w")

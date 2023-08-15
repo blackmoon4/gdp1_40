@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkjlifdrpvha1"]
+
+[ext_resource type="Script" path="res://test/A.gd" id="1"]
+[ext_resource type="PackedScene" path="res://game/TDGame/tower/TowerA1.tscn" id="2_7awjf"]
+[ext_resource type="PackedScene" path="res://test/C.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://b34i0hoimst3x" path="res://test/B.tscn" id="3_0bcyy"]
+
+[node name="A" type="Node2D"]
+script = ExtResource("1")
+aaa = ExtResource("2_7awjf")
+b = ExtResource("3_0bcyy")
+c = ExtResource("3")
+
+[node name="B" parent="." instance=ExtResource("3_0bcyy")]
+position = Vector2(933.881, -311.187)
+
+[connection signal="ready" from="." to="." method="_on_A_ready"]
+[connection signal="tree_entered" from="." to="." method="_on_A_tree_entered"]
+[connection signal="tree_exited" from="." to="." method="_on_A_tree_exited"]
+[connection signal="tree_exiting" from="." to="." method="_on_A_tree_exiting"]
